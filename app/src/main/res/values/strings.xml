@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">AppPrestamos</string>
+
+    <!-- Main -->
+    <string name="titulo">App de Prestamos</string>
+    <string name="login_titulo">Inicio de Sesión</string>
+    <string name="imagen_desc">Usuario_Imagen</string>
+    <string name="txtUsuario">Usuario: </string>
+    <string name="txtPass">Contraseña: </string>
+    <string name="hintUsuario">Usuario... </string>
+    <string name="hintContraseña">Contraseña... </string>
+    <string name="btnLogin"> Entrar </string>
+    <!-- -->
 </resources>
