@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/txtUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/txtContra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -83,7 +83,7 @@
         android:minHeight="48dp"
         android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
@@ -102,10 +102,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
+        android:onClick="VerificarUsuario"
         android:text="@string/btnLogin"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContra"
+        app:toggleCheckedStateOnClick="false" />
 </androidx.constraintlayout.widget.ConstraintLayout>
