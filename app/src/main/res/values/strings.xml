@@ -10,20 +10,27 @@
     <string name="hintUsuario">Usuario </string>
     <string name="hintContraseña">Contraseña </string>
     <string name="btnLogin"> Entrar </string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
     <!-- -->
 
     <!-- ListaPrestamos -->
-    <string name="txtTitulo">"Lista de Prestamos"</string>
+    <!-- <string name="txtTitulo">"Lista de Prestamos"</string> -->
+    <string name="btnNuevoPrestamo">Nuevo</string>
+    <string name="txtDesc">Descripcion</string>
+    <string name="txtMonto">Monto</string>
+    <string name="txtFecha">Fec. de Pago</string>
+    <string name="hintDesc">Descripcion</string>
+    <string name="hintMonto">0.0</string>
+    <string name="hintFecha">dd/mm/yy</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="btnCancelar">Cancelar</string>
+
     <!--  -->
+    <string name="title_activity_login">Cancelar</string>
+    <string name="prompt_email">Cancelar</string>
+    <string name="prompt_password">Cancelar</string>
+    <string name="action_sign_in_short">Cancelar</string>
+    <string name="action_sign_in">Cancelar</string>
+
 
 
 </resources>

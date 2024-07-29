@@ -16,8 +16,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildFeatures{
-        viewBinding true
+    viewBinding{
+        enabled = true
     }
 
     buildTypes {
@@ -29,9 +29,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
-    buildFeatures {
-        viewBinding true
     }
 }
 
