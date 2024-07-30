@@ -64,16 +64,18 @@ public class ListaPrestamosActivity extends AppCompatActivity {
         }
 
         if (db != null) {
-            Cursor cursor = db.rawQuery("SELECT pre_id, pre_desc, pre_monto from tb_prestamo", null);
+            Cursor cursor = db.rawQuery("SELECT pre_id, pre_desc, pre_monto, pre_vence, pre_fecha from tb_prestamo", null);
             if (cursor.moveToFirst()) {
                 do {
                     @SuppressLint("Range") int pre_id = cursor.getInt(cursor.getColumnIndex("pre_id"));
                     @SuppressLint("Range") String pre_desc = cursor.getString(cursor.getColumnIndex("pre_desc"));
                     //@SuppressLint("Range") int age = cursor.getInt(cursor.getColumnIndex("age"));
                     @SuppressLint("Range") float pre_monto = cursor.getFloat(cursor.getColumnIndex("pre_monto"));
+                    @SuppressLint("Range") String pre_fecha_f = cursor.getString(cursor.getColumnIndex("pre_vence"));
+                    @SuppressLint("Range") String pre_fecha = cursor.getString(cursor.getColumnIndex("pre_fecha"));
                     // Haz algo con los datos
-                    listData = new ListData(pre_id, pre_desc, pre_monto);
-                    Toast.makeText(this, String.valueOf(pre_id), Toast.LENGTH_SHORT).show();
+                    listData = new ListData(pre_id, pre_desc, pre_monto, pre_fecha_f, pre_fecha);
+                    Toast.makeText(this, String.valueOf(pre_fecha), Toast.LENGTH_SHORT).show();
                     dataArrayList.add(listData);
                 } while (cursor.moveToNext());
             }
@@ -89,11 +91,11 @@ public class ListaPrestamosActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(ListaPrestamosActivity.this, DetailedActivity.class);
-                /*intent.putExtra("name", nameList[i]);
-                intent.putExtra("time", timeList[i]);
-                intent.putExtra("ingredients", ingredientList[i]);
-                intent.putExtra("desc", descList[i]);
-                intent.putExtra("image", imageList[i]);*/
+                intent.putExtra("desc", dataArrayList.get(i).pre_desc);
+                intent.putExtra("monto", String.valueOf(dataArrayList.get(i).pre_monto));
+                intent.putExtra("fecha_cobro", dataArrayList.get(i).fecha_f);
+                intent.putExtra("fecha_pre", dataArrayList.get(i).fecha_i);
+                intent.putExtra("image", dataArrayList.get(i).pre_desc);
                 startActivity(intent);
             }
         });

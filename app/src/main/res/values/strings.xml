@@ -24,6 +24,16 @@
     <string name="btnGuardar">Guardar</string>
     <string name="btnCancelar">Cancelar</string>
 
+    <!-- DetallePrestamos -->
+    <string name="txt_titulo">Titulo</string>
+    <string name="txt_monto">Monto: </string>
+    <string name="txt_fecha_prestamo">Fecha de prestamo: </string>
+    <string name="txt_fecha_cobro">Fecha de cobro: </string>
+    <string name="txt_imagen">imagen </string>
+   <!-- <string name="btnCancelar">Cancelar</string> -->
+
+    <!--  -->
+
     <!--  -->
     <string name="title_activity_login">Cancelar</string>
     <string name="prompt_email">Cancelar</string>
